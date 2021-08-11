@@ -56,6 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.disable();
 
 		http.headers().frameOptions().disable();
+		http.headers().frameOptions().sameOrigin();
 	}
 
 	@Bean
